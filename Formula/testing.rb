@@ -5,6 +5,7 @@ class Testing < Formula
   version "1.0.0"
 
   def install
-    system "touch", "#{ENV['HOME']}/Testing.txt"
+    system "mkdir", "~/Testing"
+    system "touch", "~/Testing.txt"
   end
 end
